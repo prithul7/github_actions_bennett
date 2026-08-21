@@ -1,5 +1,5 @@
 name: building blocks
-on:push:
+on: push
 jobs:
   build:
    echo-hello:
@@ -14,5 +14,5 @@ jobs:
         run: |
           echo "this step will fail"
           exit 1
-        name: say goodbye
+      - name: say goodbye
         run: echo "Goodbye, World!"
